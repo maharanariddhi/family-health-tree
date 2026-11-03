@@ -114,7 +114,7 @@ Builds the site and publishes it to the public repository `maharanariddhi/family
 
 ## What's next
 
-- Paste notes from a phone call with a relative and have the relatives and conditions filled in automatically, with each one confirmed before it's added.
+- The app in more languages, for families where relatives don't speak English.
 - More people trying it and giving feedback.
 
 Built by Riddhi for CS 124 at the University of Illinois, working with Claude Code.
