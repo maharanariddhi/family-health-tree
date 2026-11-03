@@ -18,6 +18,7 @@ Doctors ask "Does this run in your family?" and most people can't answer, becaus
 - **Any condition.** Pick from common conditions or type your own.
 - **Doctor summary.** A one-page summary of risk levels and affected relatives that prints or saves as a PDF to bring to an appointment.
 - **Private by design.** Everything stays in your own browser. Nothing is sent to a server.
+- **English and Spanish.** Switch languages on the welcome page or at the top of the app; the doctor summary can be printed in English for the doctor.
 - **Works on phones.** On an iPhone, open the link in Safari and choose Share → Add to Home Screen to install it like an app.
 
 | Pedigree chart and risk summary | Risk details | Doctor summary |
@@ -114,7 +115,7 @@ Builds the site and publishes it to the public repository `maharanariddhi/family
 
 ## What's next
 
-- The app in more languages, for families where relatives don't speak English.
+- More languages, and a review of the Spanish by a native speaker.
 - More people trying it and giving feedback.
 
 Built by Riddhi for CS 124 at the University of Illinois, working with Claude Code.
