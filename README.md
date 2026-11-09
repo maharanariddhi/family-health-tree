@@ -16,6 +16,7 @@ Doctors ask "Does this run in your family?" and most people can't answer, becaus
 - **Family-history risk levels.** Each condition gets a **High**, **Moderate**, or **Average** level, in red, yellow, and green, with a plain-language reason ("Grandpa S. had it at 52, which counts as early") and a next step for talking to a doctor.
 - **Disease explanations.** Each risk card says briefly what the condition is and links to CDC.gov to learn more.
 - **Any condition.** Pick from common conditions or type your own.
+- **Find nearby specialists.** Each risk card says which kind of specialist treats the condition, and Find nearby lists real doctors near a ZIP code from the U.S. government's NPI Registry.
 - **Doctor summary.** A one-page summary of risk levels and affected relatives that prints or saves as a PDF to bring to an appointment.
 - **Private by design.** Everything stays in your own browser. Nothing is sent to a server.
 - **English and Spanish.** Switch languages on the welcome page or at the top of the app; the doctor summary can be printed in English for the doctor.
@@ -112,6 +113,16 @@ npm run deploy
 ```
 
 Builds the site and publishes it to the public repository `maharanariddhi/family-health-tree`, which GitHub Pages serves at https://maharanariddhi.github.io/family-health-tree/.
+
+## Doctor search server
+
+The "Find nearby" search runs on Vercel (`api/doctors.ts`, logic in `server/doctors.ts`) because the NPI Registry doesn't accept requests from web pages. Deploy it with:
+
+```bash
+npx vercel deploy --prod
+```
+
+It's served at https://family-health-tree-api.vercel.app and only answers the app's own website. During `npm run dev`, the same search runs inside the local dev server.
 
 ## What's next
 
